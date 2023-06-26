@@ -1,0 +1,52 @@
+<h1>Generar Factura</h1>
+
+<div class="container">
+           <h2>Generador de Facturas</h2>
+  
+           <form (submit)="generarFactura()" [formGroup]="facturaForm">
+             <label for="nombreCliente">Nombre del Cliente:</label>
+             <input type="text" formControlName="nombreCliente">
+             <label for="montoFactura">Monto de la Factura:</label>
+             <input type="number" formControlName="montoFactura">
+             <label for="montoFactura">Monto de la Factura:</label>
+                <div class="d-grid gap-3 col-8 mx-auto">
+                  <button >Generar Factura</button>
+                  <button class="btn btn-primary border-0" type="submit"
+                         style="background-color: rgb(0, 52, 174); border-radius: 50px; margin-top: 5px;"
+                             routerLink="/facturas">historial</button> 
+                             <button (click)="descargarArchivo()">Descargar Facturas</button> 
+                             <button type="button" class="btn btn-secondary">imprimir factura</button> 
+                  <ul>
+                    <li *ngFor="let factura of Facturaslista">
+                    <h2>Factura Generada:</h2>
+                    <label for="nombreCliente">Nombre del Cliente: {{ factura.n }} </label> 
+                    <label for="montoFactura">Monto de la Factura: {{ factura.m }} </label>
+                      <p>Valor Tributario: {{ calcularValorTributario() }}</p>
+                    </li>
+                    
+                  </ul>
+                  
+                      
+                </div>
+         </form>
+    
+     <div *ngIf="facturaGenerada">
+      
+
+    
+    </div>
+  
+ 
+    
+    
+</div>
+
+
+<footer class="footer">
+  <div class="logo">
+    <img src="/assets/Alter-Software_logo.png" alt="Logo de la empresa">
+  </div>
+  <p>Derechos de autor © 2023. Todos los derechos reservados.</p>
+
+</footer>
+

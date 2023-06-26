@@ -1,0 +1,44 @@
+<div class="container register">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login Page</title>
+    </head>
+    <body>
+        <!-- Main Content -->
+        <div class="container-fluid">
+            <div class="row main-content bg-success text-center">
+                <div class="col-md-4 text-center company__info">
+                    <span class="company__logo"><h2><span class="fa fa-android"></span></h2></span>
+                    <h4 class="company_title">Logo empresa</h4>
+                </div>
+                <div class="col-md-8 col-xs-12 col-sm-12 login_form ">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <br>
+                            <h1>Agregar punto de venta</h1>
+                            <h2>Empresa: Empresa Juan</h2>
+                            <h3>Sucursal: Sucursal 001</h3>
+                        </div>
+                        <div class="row">
+                            <form control="" class="form-group">
+                                <div class="row">
+                                    <input type="text" name="id_punto" id="id_punto" class="form__input" placeholder="Punto venta *">
+                                </div>
+                                <div class="row">
+                                    <!-- <span class="fa fa-lock"></span> -->
+                                    <input type="text" name="descripcion_punto" id="descripcion_punto" class="form__input" placeholder="Descripción punto venta *">
+                                </div>
+                                <div class="btn-group">
+                                    <input type="submit" class="btn mr-2" (click)="cambioPag('/punto')" value="Agregar Punto"/>
+                                    <input type="submit" class="btn" (click)="cambioPag('/punto')" value="Cancelar"/>
+                                  </div>  
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    </div>

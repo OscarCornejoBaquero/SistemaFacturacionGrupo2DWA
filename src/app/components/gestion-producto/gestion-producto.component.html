@@ -1,0 +1,89 @@
+
+<div >
+</div>
+<!---->
+<div class="container mt-5">
+  <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+Categoria  </button>
+</div>
+
+
+<div class="container mt-5">
+  <div class="row">
+      <div class="input-group center">
+        <input
+             type="text"
+            [(ngModel)]="NombreProducto"
+            class="form-control form-control-lg"
+             placeholder="Nombre de producto" 
+            aria-label="default input example">
+            
+          <input
+          type="text"
+         [(ngModel)]="CategoriaP"
+         class="form-control form-control-lg"
+        placeholder="Categoria"
+         />
+
+          <input
+          type="text"
+         [(ngModel)]="codigoP"
+         class="form-control form-control-lg"
+        placeholder="Codigo"
+         />
+      <input
+      type="text"
+     [(ngModel)]="DescripcionP"
+     class="form-control form-control-lg"
+      placeholder="Descripcion"
+     />
+          <input
+          type="text"
+         [(ngModel)]="valor"
+         class="form-control form-control-lg"
+          placeholder="Valor"
+         />
+        
+
+         <button class="btn btn-primary btn-lg" (click)="agregarProducto()">
+         Crear Producto
+          </button>
+          <button  class="btn btn-secondary btn-lg">Editar productos </button>
+        </div>
+    </div>
+
+    <div class="col-lg-6 offset-lg-3 mt-3">
+      <div *ngIf="listProductos.length === 0" class="card p-2">
+        <h4>No hay Personas registrados</h4>
+      </div>
+      <div class="table-responsive center">
+        <table class="table align-left">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Categoria</th>
+              <th>Codigo</th>
+              <th>descripcion</th>
+              <th>Valor</th>
+              <th>eliminar</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let Producto of listProductos; let i = index">
+            <tr>
+              <td>{{Producto.NombreProducto }}</td>
+              <td>{{Producto.CategoriaP }}</td>
+              <td>{{Producto.codigoP }}</td>
+              <td>{{Producto.DescripcionP }}</td>
+              <td>{{Producto.valor }}</td>
+              <td class="cursor text-danger" (click)="eliminarProducto(i)">
+                <i class="bi bi-bookmark-x-fill"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+</div>
+
+  

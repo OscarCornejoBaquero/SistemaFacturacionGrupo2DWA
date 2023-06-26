@@ -1,0 +1,127 @@
+
+    <h1>Generar Factura</h1>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Factura</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+    
+        .invoice {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #f5f5f5;
+          border: 1px solid #ccc;
+        }
+    
+        .invoice-header {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+        }
+    
+        .invoice-header h1 {
+          font-size: 24px;
+          color: #333;
+        }
+    
+        .invoice-details {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 10px;
+        }
+    
+        .invoice-details p {
+          margin: 0;
+        }
+    
+        .invoice-table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+    
+        .invoice-table th,
+        .invoice-table td {
+          padding: 10px;
+          border: 1px solid #ccc;
+        }
+    
+        .invoice-total {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 20px;
+        }
+    
+        .invoice-total p {
+          font-size: 18px;
+          font-weight: bold;
+          margin: 0;
+        }
+      </style>
+    </head>
+    
+    <body>
+      <div class="invoice">
+        <div class="invoice-header">
+          <img src="/assets/Alter-Software_logo.png" alt="Logo de la empresa" class="reduced-image">
+        </div>
+    <div class="invoice-header">
+            <h2>Factura</h2>
+            <div class="logo">
+        </div>
+    </div>
+
+        <div class="invoice-details">
+          <p>Fecha: 23 de junio de 2023</p>
+          <p>Cliente: John Doe</p>
+        </div>
+    
+        <table class="invoice-table">
+          <thead>
+            <tr>
+              <th>Descripción</th>
+              <th>Cantidad</th>
+              <th>Precio unitario</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Producto 1</td>
+              <td>2</td>
+              <td>$10.00</td>
+              <td>$20.00</td>
+            </tr>
+            <tr>
+              <td>Producto 2</td>
+              <td>1</td>
+              <td>$15.00</td>
+              <td>$15.00</td>
+            </tr>
+            <tr>
+              <td>Producto 3</td>
+              <td>3</td>
+              <td>$8.00</td>
+              <td>$24.00</td>
+            </tr>
+          </tbody>
+        </table>
+    
+        <div class="invoice-total">
+          <p>Total: $59.00</p>
+        </div>
+      </div>
+    </body>
+    <div class="button-container">
+            
+<div class="d-grid gap-3 col-8 mx-auto">
+    <button class="btn btn-primary border-0" type="submit"
+        style="background-color: rgb(0, 52, 174); border-radius: 40px; margin-top: 2px;"
+        routerLink="/generador">volver</button>
+</div>
+</div>
+

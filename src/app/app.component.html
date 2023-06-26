@@ -1,0 +1,52 @@
+<div class="dashboard">
+    <div class="sidebar">
+      <div class="logo">
+        <img src="./assets/img/cara.png" alt="Logo">
+      </div>
+      <div class="brand">
+        <h4>TeamSoft</h4>
+      </div>
+      <ul class="sidebar-menu">
+        <li>
+          <a href="/usuario">
+            <i class="bi bi-person"></i>
+            <span>Usuarios</span>
+          </a>
+        </li>
+        <li>
+          <a href="producto">
+            <i class="bi bi-box-seam"></i>
+            <span>Productos/Categorías</span>
+          </a>
+        </li>
+        <li>
+          <a href="/bodega">
+            <i class="bi bi-clipboard2-check"></i>
+            <span>Bodegas</span>
+          </a>
+        </li>
+        <li>
+          <a href="/empresa">
+            <i class="bi bi-building-gear"></i>
+            <span>Gestión Empresas</span>
+          </a>
+        </li>
+        <li>
+          <a href="/gestionCompras">
+            <i class="bi bi-shop-window"></i>
+            <span>Gestión Compras</span>
+          </a>
+        </li>
+        <li>
+          <a href="/generadorFacturas">
+            <i class="bi bi-receipt-cutoff"></i>
+            <span>Facturación</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <div><router-outlet></router-outlet></div>
+    </div>
+</div>
+

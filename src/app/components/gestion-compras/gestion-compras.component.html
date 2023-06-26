@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <div class="p-3 mb-2 bg-primary text-white">Ingreso de Mercaderia</div>
+  <meta charset="UTF-8">
+  <title>Agregar Producto</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="gestion-compras.component.css">
+</head>
+<body>
+  <div class="container">
+    <div class="panel-group">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Ingreso de Mercaderia</div>
+        <div class="panel-body">
+          <form>
+            <div class="form-group">
+              <label for="nombre">Nombre de la Empresa:</label>
+              <p></p>
+              <select id="color-select">
+                <option selected>Seleccionar Empresas</option>
+                <option value="empresa1">Empresa Juan</option>
+                <option value="empresa2">Empresa TZ</option>
+                <option value="empresa3">Empresa X</option>
+              </select>
+            </div>
+            <div class="form-group left">
+              <div class="form-group">
+                <label for="nombre">Nombre del Producto:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre del producto" required>
+              </div>
+            </div>
+            <div class="form-group right">
+              <div class="form-group">
+                <label for="Codigo">Codigo del Producto:</label>
+                <input type="text" class="form-control" id="Codigo" placeholder="Ingrese el Codigo del producto" required>
+              </div>
+            </div>
+            <div class="form-group left">
+              <label for="precio">Precio:</label>
+              <input type="number" class="form-control" id="precio" placeholder="Ingrese el precio del producto" required>
+            </div>
+            <div class="form-group right">
+              <label for="cantidad">Cantidad:</label>
+              <input type="number" class="form-control" id="cantidad" placeholder="Ingrese la cantidad disponible" required>
+            </div>
+            <br>
+            <div class="form-group left">
+            <div class="form-group">
+              <label for="descripcion">Descripción:</label>
+              <textarea class="form-control" id="descripcion" placeholder="Ingrese una descripción"></textarea>
+            </div>
+            </div>
+            <table class="table table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">PRODUCTO</th>
+                  <th scope="col">CANTIDAD</th>
+                  <th scope="col">COSTO</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mouse Logitech</td>
+                  <td>20</td>
+                  <td>$40,00</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Mouse Pad Scorpion</td>
+                  <td>10</td>
+                  <td>$20,00</td>
+                </tr>
+              </tbody>
+            </table>
+            <button type="submit" class="btn btn-primary">Guardar ingreso</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

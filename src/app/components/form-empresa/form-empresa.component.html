@@ -1,0 +1,59 @@
+<div class="container register">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <div class="form-group">                  
+                    <div class="image-preview">
+                        <img id="previewImage" src="#" alt="Vista previa de la imagen" />
+                      </div>
+                  </div>
+                <input type="submit" name="" value="Agregar logo"/><br/>
+            </div>
+            <div class="col-md-9 register-right">
+                <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="cambioPag()" role="tab" aria-controls="home" aria-selected="true">
+                            <i class="bi bi-house"></i>Home</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">Agregar empresa</h3>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="RUC *" value="" />
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Razón social *" value="" />
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nombre comercial *" value="" />
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control custom-input" placeholder="Dirección Empresa *" value="" />
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <input type="text"  name="Tipo_Contribuyente" class="form-control custom-input" placeholder="Tipo Contribuyente *" value="" />
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <input type="text" minlength="10" maxlength="10" name="Telefono_empresarial" class="form-control custom-input" placeholder="Telefono empresarial *" value="" />
+                                </div>
+                                <br>
+                                <div class="btn-group">
+                                    <input type="submit" class="btn mr-2" (click)="cambioPag()" value="Agregar"/>
+                                    <input type="submit" class="btn" (click)="cambioPag()" value="Cancelar"/>
+                                  </div>                                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

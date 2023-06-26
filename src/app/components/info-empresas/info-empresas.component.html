@@ -1,0 +1,69 @@
+<br>
+<div class="container mt-5">
+    <div class="header">
+        <p>Información Empresas</p>
+        <button type="button" class="btn btn-success btn-sm" (click)="cambioPag('/agregarEmpresa')">
+            <i class="bi bi-plus-circle-dotted"></i> Empresas
+          </button>
+    </div>
+    <div class="buttons">
+        <button type="button" class="btn btn-success btn-sm" >Copiar</button>
+        <button type="button" class="btn btn-primary btn-sm" >PDF</button>
+    </div>
+    <br>
+        <div class="d-flex justify-content-center mt-5">
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">VER</th>
+                        <th scope="col">RUC</th>
+                        <th scope="col">Razón social</th>
+                        <th scope="col">Nombre comercial</th>
+                        <th scope="col">Acción Sucursal</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <ng-container>    
+                        <tr>               
+                          <td><i class="bi bi-info-square-fill"></i></td>
+                          <td>13256467987</td>
+                          <td>Juan Vera</td>
+                          <td>Empresa Juan</td>
+                          <td><button type="button" class="btn btn-success btn-sm custom-btn" (click)="cambioPag('/sucursales')"><i class="bi bi-list-ul"></i> Sucursales</button></td>
+                          <td><span class="badge text-bg-success">Activo</span></td>
+                          <td>valor</td>
+                        </tr>  
+                      </ng-container>
+                </tbody>
+                <tbody>
+                    <ng-container>    
+                        <tr>               
+                          <td><i class="bi bi-info-square-fill"></i></td>
+                          <td>7894561230</td>
+                          <td>Dario Cedeño</td>
+                          <td>Empresa tz</td>
+                          <td><button type="button" class="btn btn-success btn-sm custom-btn" (click)="cambioPag('/sucursales')"><i class="bi bi-list-ul"></i> Sucursales</button></td>
+                          <td><span class="badge text-bg-danger">No activo</span></td>
+                          <td>valor</td>
+                        </tr>  
+                      </ng-container>
+                </tbody>
+                <tbody>
+                    <ng-container>    
+                        <tr>               
+                          <td><i class="bi bi-info-square-fill"></i></td>
+                          <td>4679874561</td>
+                          <td>Maria Ceo</td>
+                          <td>Empresa x</td>
+                          <td><button type="button" class="btn btn-success btn-sm custom-btn" (click)="cambioPag('/sucursales')"><i class="bi bi-list-ul"></i> Sucursales</button></td>
+                          <td><span class="badge text-bg-success">Activo</span></td>
+                          <td>valor</td>
+                        </tr>  
+                      </ng-container>
+                </tbody>
+            </table>
+        </div>
+        <h5>Mostrando registros del 1 al 3 de un total de 3 registros</h5>
+</div>

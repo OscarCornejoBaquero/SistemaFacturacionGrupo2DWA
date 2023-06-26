@@ -1,0 +1,57 @@
+<br>
+<div class="container mt-5">
+    <div class="header">
+        <p>Información Sucursales</p>
+        <button type="button" class="btn btn-success btn-sm" (click)="cambioPag('/agregarSucursal')">
+            <i class="bi bi-plus-circle-dotted"></i> Sucursal
+          </button>
+    </div>
+    <div class="buttons">
+        <button type="button" class="btn btn-success btn-sm" >Copiar</button>
+        <button type="button" class="btn btn-primary btn-sm" >PDF</button>
+    </div>
+    <br>
+        <div class="d-flex justify-content-center mt-5">
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Información</th>
+                        <th scope="col">Empresa</th>
+                        <th scope="col">Nombre sucursal</th>
+                        <th scope="col">Código establecido</th>
+                        <th scope="col">Acción Sucursal</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <ng-container>    
+                        <tr>               
+                          <td><i class="bi bi-info-square-fill"></i></td>
+                          <td>Empresa Juan</td>
+                          <td>Sucursal 1</td>
+                          <td>001</td>
+                          <td><button type="button" class="btn btn-success btn-sm custom-btn" (click)="cambioPag('/punto')"><i class="bi bi-list-ul"></i> Puntos de venta</button></td>
+                          <td><span class="badge text-bg-success">Activo</span></td>
+                          <td>valor</td>
+                        </tr>  
+                      </ng-container>
+                </tbody>
+                <tbody>
+                    <ng-container>    
+                        <tr>               
+                          <td><i class="bi bi-info-square-fill"></i></td>
+                          <td>Empresa Juan</td>
+                          <td>Sucursal 2</td>
+                          <td>002</td>
+                          <td><button type="button" class="btn btn-success btn-sm custom-btn" (click)="cambioPag('/punto')"><i class="bi bi-list-ul"></i> Puntos de venta</button></td>
+                          <td><span class="badge text-bg-success">Activo</span></td>
+                          <td>valor</td>
+                        </tr>  
+                      </ng-container>
+                </tbody>
+            </table>
+        </div>
+        <h5>Mostrando registros del 1 al 2 de un total de 2 registros</h5>
+</div>
+  

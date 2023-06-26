@@ -1,0 +1,63 @@
+<div class="container register">
+    <div class="row">
+        <div class="col-md-3 register-left">
+            <div class="form-group">                  
+                <div class="image-preview">
+                    <img id="previewImage" src="#" alt="Vista previa de la imagen" />
+                  </div>
+              </div>
+            <input type="submit" name="" value="Agregar logo"/><br/>
+        </div>
+        <div class="col-md-9 register-right">
+            <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                        <i class="bi bi-house"></i>Home</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h3 class="register-heading">Agregar Sucursal</h3>
+                    <div class="row register-form">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="RUC Empresa*" value="" />
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Razón social *" value="" />
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Nombre comercial *" value="" />
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control custom-input" placeholder="Código de la sucursal *" value="" />
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="text"  name="Nombre_establecimiento" class="form-control custom-input" placeholder="Nombre del establecimiento *" value="" />
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="text"  name="Nombre_comercial" class="form-control custom-input" placeholder="Nombre comercial del establecimiento  *" value="" />
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="text"  name="Dirección_establecimiento" class="form-control custom-input" placeholder="Dirección establecimiento  *" value="" />
+                            </div>
+                            <br>
+                            <div class="btn-group">
+                                <input type="submit" class="btn mr-2" (click)="cambioPag('/sucursales')" value="Agregar"/>
+                                <input type="submit" class="btn" (click)="cambioPag('/sucursales')" value="Cancelar"/>
+                              </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
